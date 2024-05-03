@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #25274D;
+        }
+
+        .card {
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-logo {
+            color: #FFD166;
+            font-weight: bold;
+            font-size: 2rem;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        .btn-login {
+            background-color: #FFD166;
+            border: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-login:hover {
+            background-color: #FFC043;
+        }
+
+        .login-img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .login-img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5 d-none d-md-block"> 
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHNob3BwaW5nJTIwd29tZW4lMjBzdHJlZXQlMjBwYWNrZXQlMjBkaXN0cmlidXRpb25zJTIwdGV4dHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="login form" class="img-fluid rounded-lg login-img" />
+                </div>
+                <div class="col-md-6 col-lg-5 d-flex align-items-center">
+                    <div class="card">
+                        <div class="card-body p-4 p-lg-5 text-black">
+
+                            <form>
+
+                                <div class="text-center mb-4 pb-1">
+                                    <i class="fas fa-cubes fa-2x me-3 login-logo" style="color: #FFD166;"></i>
+                                    <span class="login-logo">Logo</span>
+                                </div>
+
+                                <h5 class="fw-normal text-center mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="form2Example17" class="form-control form-control-lg" placeholder="Email address" />
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="form2Example27" class="form-control form-control-lg" placeholder="Password" />
+                                </div>
+
+                                <div class="mb-4">
+                                    <button class="btn btn-login btn-lg btn-block" type="button">Login</button>
+                                </div>
+
+                                <div class="text-center mb-4">
+                                    <a class="small text-muted" href="#!">Forgot password?</a>
+                                </div>
+
+                                <p class="text-center mb-5 pb-lg-2" style="color: #B7B7A4;">Don't have an account? <a href="#!" style="color: #B7B7A4;">Register here</a></p>
+
+                                <div class="text-center">
+                                    <a href="#!" class="small text-muted">Terms of use.</a>
+                                    <a href="#!" class="small text-muted ms-2">Privacy policy</a>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
